@@ -7,7 +7,17 @@
 //GENERAZIONE NUMERI
 
 var numero = 100;
+var x = 0;
 
 for (var i = 1; i <= numero; i++) {
-    console.log('Numero ' + i);
+    if ( ( i % 5 == 0) && ( i % 3 == 0) ) {
+        x = 'fizzbuzz';
+    } else if ( i % 5 == 0) {
+        x = 'buzz';
+    } else if (i % 3 == 0) {
+        x = 'fizz';
+    } else {
+        x = i;
+    }
+    console.log('Numero ' + x);
 }
